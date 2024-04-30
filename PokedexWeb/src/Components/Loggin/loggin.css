@@ -1,0 +1,125 @@
+.loggin_container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.welcome{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content:center;
+    height: 250px;
+    padding: 1em;
+}
+
+.background_pokeball{
+    position: absolute;
+    width: 60%;
+    top: 25%;
+    right: -21%;
+    transform: rotate(65deg);
+}
+
+.ash_container{
+    height: 85%;
+}
+
+.ash_container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user_form{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: .5em;
+    padding: 1em;
+}
+
+.user_form>label {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.input_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input_box > input[id='user']{
+    width: 75%;
+    height: 29px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1em;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: var(--shadow);
+}
+
+.input_box > input[id='user']:focus{
+    outline: none;
+}
+
+.loggin_submit{
+    position: relative;
+    left: -30px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--bg-green);
+    box-shadow: var(--shadow);
+}
+
+.loggin_submit:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 498px) {
+    .user_form{
+        width: 70%;
+    }
+    .background_pokeball {
+        width: 45%;
+        top: 6%;
+        right: -19%;
+    }
+}
+
+@media screen and (min-width: 578px) {
+    .user_form{
+        width: 50%;
+    }
+    .background_pokeball {
+        width: 35%;
+        top: 9%;
+        right: -12%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .user_form{
+        width: 40%;
+    }
+    .background_pokeball {
+        width: 28%;
+        top: 5%;
+        right: -12%;
+    }
+}

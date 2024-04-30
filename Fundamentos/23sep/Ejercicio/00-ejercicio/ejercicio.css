@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.box{
+    background-color: gray;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .container{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap
+    }
+
+    .one{
+        flex-grow: 1;
+    }
+
+    .two{
+        flex-grow: 2;
+    }
+
+    .three{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        flex-wrap: nowrap;
+    }
+    .one{
+        width: 100%;
+    }
+    .two{
+        width: 100%;
+    }
+    .three{
+        width: 100%;
+    }
+}

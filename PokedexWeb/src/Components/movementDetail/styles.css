@@ -1,0 +1,162 @@
+.box_movement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    max-height: 650px;
+}
+
+.box_movement > h2{
+    text-align: center;
+    font-size: 2em;
+    margin: .3em;
+    color: var(--text);
+}
+
+.move_stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.movement_data > h4{
+    margin: .2em;
+}
+
+.move_stats > span{
+    padding: .4em;
+    border-radius: .5em;
+    font-weight: bold;
+}
+
+.description_info,
+.effect_info {
+    overflow-y: scroll;
+    max-height: 150px;
+}
+
+.electric{
+    background-color: rgb(255, 255, 0);
+    color: var(--bg-color);
+}
+
+.normal{
+    background-color: rosybrown;
+    color: var(--bg-color);
+}
+
+.bug{
+    background-color: greenyellow;
+    color: var(--bg-color);
+}
+
+.dark{
+    background-color: #1d3354;
+    color: white;
+}
+
+.dragon{
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+
+/* background color by type of attack */
+.fairy{
+    background-color: palevioletred;
+    color: var(--bg-color);
+}
+
+.fire{
+    background-color: #d64045;
+    color: var(--bg-color);
+}
+
+.fighting{
+    background-color: tomato;
+}
+
+.flying{
+    background-color: steelblue;
+    color: var(--bg-color);
+}
+
+.ghost{
+    background-color: #9984D4;
+    color: var(--bg-color);
+}
+
+.grass{
+    background-color: #5CA4A9;
+    color: var(--bg-color);
+}
+
+.ground{
+    background-color: #754F44;
+    color: whitesmoke;
+}
+
+.ice{
+    background-color: #DEFFFC;
+    color: var(--bg-color);
+}
+
+.poison{
+    background-color: #39304A;
+    color: whitesmoke;
+}
+
+.psychic{
+    background-color: purple;
+    color: whitesmoke;
+}
+
+.rock{
+    background-color: #C6A15B;
+    color: var(--bg-color);
+}
+
+.steel{
+    background-color: silver;
+    color: var(--bg-color);
+}
+
+.water{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+/* background color by constet type attack */
+/*
+    Carisma = naranja claro
+    Dureza = Amarillo claro
+    Ingenio + Verde claro
+    Dulzura = rosa claro
+    Belleza = azul cielo
+*/
+.tough{
+    background-color: rgb(248, 240, 129);
+    color: var(--bg-color);
+}
+
+.cool{
+    background-color: rgb(243, 139, 139);
+    color: var(--bg-color);
+}
+
+.cute{
+    background-color: rgb(247, 166, 183);
+    color: var(--bg-color);
+}
+
+.beauty{
+    background-color: skyblue;
+    color: var(--bg-color);
+}
+
+.smart{
+    background-color: rgb(99, 224, 172);
+}

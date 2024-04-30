@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="desarrollador, programador, programming, Web, HTML, CSS, JS, Python">
+    <meta name="description" content="Portfolio de proyectos de desarrollo web y Escritorio.">
+    <!-- Font Awesome Icons kit -->
+    <script src="https://kit.fontawesome.com/ea9b6ffb65.js"></script>
+    <!-- CSS sheets -->
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="shortcut icon" href="./Assets/Imgs/logo.png" type="image/x-icon">
+    <title>MeshDev | Coding your Dreams</title>
+</head>
+<body id="body">
+    <header class="header">
+        <!-- Website Loader -->
+        <div class="loader" id="loader_container">
+            <div class="loader__round loader__round--shadow ">
+                <img src="./Assets/Imgs/logo.png" alt="MeshDev Logo" class="logo__loader">
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="nav">
+        <!-- Brand Logo -->
+        <div class="nav__brand">
+            <img class="nav__logo" src="./Assets/Imgs/logo.png" alt="logo_mesh">
+            <span class="nav__slogan">Coding your dreams</span>
+        </div>
+        <!-- Navigation Menu -->
+        <ul class="nav__menu" id="menu">
+            <li class="nav__menu__item"><a class="nav__menu__link active" href="#home">Home</a></li>
+            <li class="nav__menu__item"><a class="nav__menu__link" href="#technologies">Technologies</a></li>
+            <li class="nav__menu__item"><a class="nav__menu__link" href="#projects">Projects</a></li>
+            <li class="nav__menu__item"><a class="nav__menu__link" href="#about">About me</a></li>
+            <li class="nav__menu__item"><a class="nav__menu__link" href="#contact">Contact</a></li>
+        </ul>
+        <!-- Mobile Menu -->
+        <div class="icons__menu">
+            <span id="mode"><i class="fa-solid fa-circle-half-stroke"></i></span>
+            <div class="btn__menu" id="btn_menu">
+                <span class="stripe" id="1"></span>
+                <span class="stripe" id="2"></span>
+                <span class="stripe" id="3"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Website Content -->
+    <main class="main">
+
+        <section class="home" id="home">
+            <div class="home__landing__img">
+                <img src="./Assets/Imgs/hero__land.png" class="home__landing">
+            </div>
+            <div class="home__message">
+                <h1 class="home__title">MeshDev<span class="code__pointer">_</span></h1>
+                <h3 class="home__subtitle">FullStack Web Development</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque dicta maiores sapiente modi deleniti expedita, repudiandae numquam odit soluta aspernatur reiciendis, distinctio ullam, omnis optio quas reprehenderit atque. Quo!<p>
+            </div>
+        </section>
+
+        <section class="technologies" id="technologies">
+            <h2 class="subtitle">Technologies</h1>
+            <p class="tech_phrase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nihil ut aliquid earum exercitationem ab animi atque iste nisi. Dolor labore sit quae amet veniam. Ipsam obcaecati explicabo non cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, consequatur? Veniam mollitia veritatis libero. Quam placeat quia corrupti facere consequuntur quaerat minus ad, illum vero expedita molestias reprehenderit rem tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias harum dignissimos porro delectus. Facilis accusamus distinctio exercitationem deserunt tempora laboriosam sequi, perspiciatis sed nisi enim, quaerat, aliquid voluptatibus repudiandae?</p>
+            <div class="tech__slide">
+                <img class="slide__item" src="./Assets/svgs/HTML5 Logo.svg" alt="">
+                <img class="slide__item" src="./Assets/svgs/CSS3_logo.svg" alt="">
+                <img class="slide__item" src="./Assets/svgs/JS_logo.svg" alt="">
+                <img class="slide__item" src="./Assets/svgs/Python_(programming_language)-Logo.wine.svg" alt="">
+                <img class="slide__item" src="./Assets/svgs/react_logo.svg" alt="">
+                <img class="slide__item" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="">
+                <img class="slide__item" src="./Assets/svgs/MySQL-Logo.wine.svg" alt="">
+                <img class="slide__item" src="./Assets/svgs/PostgreSQL-Logo.wine.svg" alt="">
+                <img class="slide__item" src="./Assets/svgs/Linux-Logo.wine.svg" alt="">
+                <img class="slide__item" src="./Assets/svgs/GitHub-Logo.svg" alt="">
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="subtitle">Projects</h1>
+            <div class="gallery">
+                <div class="container__img">
+                    <img class="gallery__img" src="./Assets/Imgs/ejemplo.png" alt="Cartera de Clientes">
+                    <div class="overlay">
+                        <div class="overlay__message">
+                            <h3 class="overlay__title"><a class="overlay__link" href="https://github.com/MesachVenegas/Inventarios_app" target="_blank">Cartera De Clientes</a></h3>
+                            <p class="overlay__text">Aplicación de escritorio para el almacenamiento de clientes y productos, hecho en Python 3.10 y el GUI con TKinter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__img">
+                    <img class="gallery__img" src="./Assets/Imgs/ejemplo1.jpg" alt="Sitio con información sobre libros demo">
+                    <div class="overlay">
+                        <div class="overlay__message">
+                            <h3 class="overlay__title"><a class="overlay__link" href="https://mesachvenegas.github.io/Ebook/" target="_blank">Bookpedia</a></h3>
+                            <p class="overlay__text">Website con una biblioteca de libros e información de los mismo construida con Bootstrap 4</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__img">
+                    <img class="gallery__img" src="./Assets/Imgs/ejemplo2.jpg" alt="Landing Page Huddle website">
+                    <div class="overlay">
+                        <div class="overlay__message">
+                            <h3 class="overlay__title"><a class="overlay__link" href="https://mesachvenegas.github.io/Landing-Page/" target="_blank">Huddle</a></h3>
+                            <p class="overlay__text">Landing-Page Huddle community build, construido con HTML, CSS y JS vanilla.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__img">
+                    <img class="gallery__img" src="./Assets/Imgs/portfolio.png" alt="Portfolio personal">
+                    <div class="overlay">
+                        <div class="overlay__message">
+                            <h3 class="overlay__title"><a class="overlay__link" href="https://mesachvenegas.github.io/Portfolio_Personal/" target="_blank">MeshDev Portfolio</a></h3>
+                            <p class="overlay__text">Portfolio Personal construido en HTML, CSS y JS Vanilla.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__img">
+                    <img class="gallery__img" src="./Assets/Imgs/ejemplo4.jpg" alt="Portfolio personal">
+                    <div class="overlay">
+                        <div class="overlay__message">
+                            <h3 class="overlay__title"><a class="overlay__link" href="https://github.com/MesachVenegas/Kurumy_Bot" target="_blank">Kurumy Discord Bot</a></h3>
+                            <p class="overlay__text">Discord Server bot construido en Python 3.10 con el API de Discord 2.0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__img">
+                    <img class="gallery__img" src="./Assets/Imgs/academlo_store.png" alt="Portfolio personal">
+                    <div class="overlay">
+                        <div class="overlay__message">
+                            <h3 class="overlay__title"><a class="overlay__link" href="https://mesachvenegas.github.io/E-Commerce-Academlo/" target="_blank">Academlo Store</a></h3>
+                            <p class="overlay__text">Maquetado web de un E-commerce construido puramente en HTML, CSS y JS Vanilla.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__img">
+                    <img class="gallery__img" src="./Assets/Imgs/academlo_portfolio.png" alt="Portfolio personal">
+                    <div class="overlay">
+                        <div class="overlay__message">
+                            <h3 class="overlay__title"><a class="overlay__link" href="https://mesachvenegas.github.io/Portfolio/" target="_blank">Academlo Portfolio</a></h3>
+                            <p class="overlay__text">Maquetado de Portfolio diseñado en Academlo y construido en HTML, CSS y JS Vanilla</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__img">
+                    <img class="gallery__img" src="./Assets/Imgs/vaccination.png" alt="Portfolio personal">
+                    <div class="overlay">
+                        <div class="overlay__message">
+                            <h3 class="overlay__title"><a class="overlay__link" href="https://mesachvenegas.github.io/Vaccination/" target="_blank">Vaccination Landing Page</a></h3>
+                            <p class="overlay__text">Maquetado de Landing-Page para campaña de vacunacion contra el Covid-19 como parte de LaunchX </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="subtitle">About Me</h1>
+                <div class="about__container">
+                    <div class="about__img">
+                        <div class="about__img__rounded">
+                            <img class="about__img--img" src="./Assets/Imgs/developer.jpg" alt="">
+                        </div>
+                        <div class="about__social">
+                            <ul class="about__social__list">
+                                <li class="foot__list__item foot__bg--icon">
+                                    <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li class="foot__list__item foot__bg--icon">
+                                    <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="foot__list__item foot__bg--icon">
+                                    <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="foot__list__item foot__bg--icon">
+                                    <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-github"></i></a>
+                                </li>
+                                <li class="foot__list__item foot__bg--icon">
+                                    <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about__HowIm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem fuga ipsa dolorum, nihil perferendis porro nisi consequatur voluptate aliquam iure quibusdam aperiam, temporibus ea, praesentium id reiciendis. Earum, corporis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque minus architecto maiores iste porro, inventore eligendi nam sapiente distinctio nesciunt sit corrupti voluptas provident est possimus iure impedit optio!
+                    </div>
+                </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="subtitle">Contact</h1>
+            <div class="contact__container">
+                <div class="contact__description">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla vitae ipsum corrupti optio odit eligendi mollitia molestiae! Expedita a facere saepe sunt quas quisquam harum voluptate quo quia corporis.</p>
+                </div>
+                <hr class="contact__divisor">
+                <form class="contact__form">
+                    <div class="form__container form__name">
+                        <input class="form__input" type="text" id="name" placeholder="Nombre">
+                    </div>
+                    <div class="form__container form__email">
+                        <input class="form__input" type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form__text-area__container">
+                        <textarea class="form__text-area" name="message" id="message" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button class="form__btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="foot__container">
+            <div class="foot__contact">
+                <ul class="foot__list">
+                    <li class="foot__list__item">
+                        <a class="foot__link foot__logo" href="index.html">MeshDev<span class="code__pointer">_</span></a>
+                    </li>
+                    <li class="foot__list__item">
+                        <a class="foot__link" href="mailto: mesach.venegas@hotmail.com"><i class="fa-solid fa-envelope"></i> mesach.venegas@hotmail.com</a>
+                    </li>
+                    <li class="foot__list__item">
+                        <a class="foot__link" href="tel: 6631662698"><i class="fa-solid fa-phone"></i> (+52) 663-166-2698</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot__nav">
+                <ul class="foot__list">
+                    <li class="foot__list__item">
+                        <h3 class="foot__title">Pages</h3>
+                    </li>
+                    <li class="foot__list__item">
+                        <a class="foot__link" href="#home">Home <i class="foot__icon--hover fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="foot__list__item">
+                        <a class="foot__link" href="#technologies">Technologies <i class="foot__icon--hover fa-solid fa-microchip"></i></a>
+                    </li>
+                    <li class="foot__list__item">
+                        <a class="foot__link" href="#projects">Projects <i class="foot__icon--hover fa-solid fa-briefcase"></i></a>
+                    </li>
+                    <li class="foot__list__item">
+                        <a class="foot__link" href="#about">About me <i class="foot__icon--hover fa-solid fa-user"></i></a>
+                    </li>
+                    <li class="foot__list__item">
+                        <a class="foot__link" href="#contact">Contact <i class="foot__icon--hover fa-solid fa-address-book"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot__social">
+                <ul class="foot__list foot__list--icons">
+                    <li class="foot__list__item foot__bg--icon">
+                        <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="foot__list__item foot__bg--icon">
+                        <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="foot__list__item foot__bg--icon">
+                        <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="foot__list__item foot__bg--icon">
+                        <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li class="foot__list__item foot__bg--icon">
+                        <a class="foot__link foot__link--social" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot__copy">
+            <p class="foot__copy__p">Made with <i class="fa-solid fa-heart icon-heart"></i> By Mesach Venegas Developer</p>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="./Js/main.js"></script>
+</body>
+</html>

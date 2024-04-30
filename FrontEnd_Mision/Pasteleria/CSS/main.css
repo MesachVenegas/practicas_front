@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Lobster&display=swap");
+:root {
+  --spanish-pink: #f9b9b7;
+  --cliclamen: #f06c9b;
+  --deep-champagne: #f5d491;
+  --dark-skyblue: #96c9dc;
+  --candel-blue: #61a0af;
+  --cristal-black: rgba(0, 0, 0, 0.7);
+  --cristal-white: rgba(255, 255, 255, 0.8);
+}
+/* dimensiones del logo */
+.logo {
+  height: 70px;
+  width: 70px;
+}
+/* Navbar */
+.bg-navbar {
+  background-color: var(--cliclamen);
+}
+.mark {
+  background: rgba(255, 255, 255, 0);
+  font-family: "Lobster", cursive;
+}
+body {
+  font-family: "Fira Code";
+  background-image: url("/Images/bg-image.jpg");
+}
+.nav-link {
+  font-family: "Lobster", cursive;
+  font-size: 1.3em;
+}
+.nav-link:hover {
+  color: var(--candel-blue);
+}
+/* caja de texto principal */
+div.text-box {
+  position: relative;
+  top: 130px;
+}
+.text-box {
+  font-weight: bold;
+  background-color: var(--cristal-white);
+  padding: 30px;
+}
+.card-box {
+  position: relative;
+  top: 135px;
+}
+.rounded-img {
+  border-radius: 15px;
+}
+.card {
+  background-color: var(--cristal-white);
+}
+.card-box h5 {
+  font-family: "Lobster", cursive;
+}
+/* Boton de personalización */
+.btn-pastel {
+  margin-top: 40px;
+  background-color: var(--deep-champagne);
+  font-size: 2em;
+}
+.btn-pastel a:hover {
+  background-color: var(--candel-blue);
+}
+/* Styles para el form de pedidos. */
+.make-cake {
+  font-family: "Lobster", cursive;
+}
+.btn-send {
+  background-color: var(--deep-champagne);
+  background: var(--deep-champagne);
+  color: #000000;
+  font-size: 2em;
+}
+a.btn-send:hover {
+  background-color: var(--candel-blue);
+}
+.foot {
+  position: relative;
+  top: 140px;
+  background-color: var(--cliclamen);
+  font-weight: bold;
+}

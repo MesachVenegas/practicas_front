@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --moderate-cyan: #35B0BF;
+    --grayish-orange: #D2CECB;
+    --dark-grayish-blue: #242635;
+    --dark-grayish-blue-trans: rgb(68, 72, 100);
+    --montserrat: 'Montserrat', sans-serif;
+    --icon-size: 24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--montserrat);
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: var(--dark-grayish-blue);
+    color: #FFF;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--moderate-cyan);
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--moderate-cyan);
+}
+
+h3{
+    color: #333;
+}
+
+.navbar{
+    display: flex;
+    padding: .5rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.navbar-menu{
+    position: absolute;
+    background-color: var(--dark-grayish-blue);
+    width: 60%;
+    right: 0;
+    top: 80px;
+    min-height: auto;
+    padding: 1.5rem 1rem;
+    left: -100%;
+    transition: left .7s linear;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-item{
+    list-style: none;
+    padding: .5rem;
+}
+
+.nav-link{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    background-color: var(--dark-grayish-blue-trans);
+}
+
+.menu-icon{
+    margin: 1.5rem;
+    font-size: 24px;
+    color: var(--grayish-orange);
+}
+
+#menu-btn{
+    visibility: hidden;
+}
+
+#menu-btn:checked ~ .navbar-menu {
+    left: 40%;
+}
+
+.header-photo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.circle-bg{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--dark-grayish-blue-trans);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 1.5rem;
+}
+
+.circle-bg>img{
+    margin-bottom: .5rem;
+    object-fit: contain;
+}
+
+.header-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    width: 300px;
+}
+
+.info-item{
+    padding: .3rem;
+    margin: .3rem;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 32px;
+}
+
+.info-name{
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--moderate-cyan);
+}
+
+.info-divisor{
+    width: 100%;
+}
+
+.info-divisor_mid{
+    display: none;
+}
+
+.info-years{
+    font-weight: 400;
+    color: var(--moderate-cyan);
+}
+
+.info-social{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-circle{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    width: 42px;
+    height: 42px;
+    background-color: var(--grayish-orange);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.fa-brands{
+    width: 32px;
+    font-weight: bold;
+    color: var(--dark-grayish-blue);
+}
+
+.jobs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    margin: .7rem;
+    background-color: var(--dark-grayish-blue-trans);
+    border-radius: 1rem;
+    max-height: 140px;
+}
+
+.job-item{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 70px;
+    margin: .3rem;
+    background-color: var(--grayish-orange);
+    border-radius: 1.5rem;
+}
+
+.job-icon{
+    width: 40px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+.about-title{
+    margin-bottom: 1rem;
+}
+
+
+.services{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.service-cards{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.service-card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: .5rem;
+    text-align: center;
+    background-color: #FFF;
+    color: var(--dark-grayish-blue-trans);
+    width: 400px;
+    height: 300px;
+    margin: 1rem;
+}
+
+.service-card-content{
+    position: absolute;
+    margin-top: .5rem;
+    width: 90%;
+}
+
+.card-icon{
+    width: 95px;
+}
+
+.card-title{
+    margin-top: 1rem;
+}
+
+.card-text{
+    margin-top: .5rem;
+}
+
+.bg-vector{
+    position: relative;
+    top: -80px;
+    width: 240px;
+}
+
+.skills{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-bard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 1rem;
+    padding: .5rem;
+    text-align: left;
+}
+
+.skill-labels{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-top: .5rem;
+}
+
+.skills-subtitle{
+    position: absolute;
+    left: 1%;
+}
+
+.skill-porcent{
+    font-size: .7rem;
+    color: var(--moderate-cyan);
+}
+
+.skill-bar{
+    position: relative;
+    background-color: #FFF;
+    width: 100%;
+    height: 10px;
+    border-radius: 4px;
+    margin-top: .5rem;
+}
+
+.bar-fill{
+    position: absolute;
+    background-color: var(--moderate-cyan);
+    height: 10px;
+    border-radius: 4px;
+}
+
+.one{
+    width: 70%;
+}
+
+.two{
+    width: 60%;
+}
+
+.three{
+    width: 35%;
+}
+
+.for{
+    width: 55%;
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-title{
+    text-align: center;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.project-carrusel{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.project-sample {
+    display: flex;
+    justify-content: center;
+
+}
+
+.project-img{
+    margin: .5rem;
+    padding: .5rem;
+    width: 280px;
+    height: auto;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item{
+    position: relative;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: white;
+    width: 220px;
+    height: 220px;
+    color: var(--grayish-orange);
+    border-radius: .5rem;
+}
+
+.contact-bg{
+    position: absolute;
+    width: 220px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.icon-card{
+    font-size: 4rem;
+    color: var(--moderate-cyan);
+    margin-bottom: .5rem;
+}
+
+.card-content{
+    position: absolute;
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: .5rem;
+    z-index: 5;
+}
+
+.contact-subtitle{
+    margin: .5rem 0;
+}
+
+.contact-text{
+    font-size: .8rem;
+    color: #333;
+}
+
+.footer{
+    padding: 3rem;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+}
+
+.foot-text{
+    color: var(--moderate-cyan);
+}
+
+::-webkit-scrollbar{
+    /* display: none; */
+    visibility: hidden;
+}
+
+/****** Media Queries ******/
+
+/* Teléfonos grandes & tabletas pequeñas*/
+@media screen and (min-width: 768px) {
+    .header-info {
+        position: relative;
+    }
+
+    .name{
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+
+    .info{
+        display: grid;
+        grid-template-rows: repeat(4, .2fr);
+        font-size: 1.2rem;
+        position: absolute;
+        width: 350px;
+        left: 1rem;
+        top: -23rem;
+    }
+
+    .info-divisor{
+        display: none;
+    }
+
+    .info-divisor_mid{
+        display: inline-flex;
+        width: 80%;
+    }
+
+    .info-social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        left: 3rem;
+        top: -7rem;
+    }
+
+    .icon-circle{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: .5rem;
+        width: 56px;
+        height: 56px;
+    }
+
+    .fa-brands{
+        font-size: 20px;
+    }
+
+    .job-container{
+        display: flex;
+        position: relative;
+        width: 100%;
+        top: -2.5rem;
+        justify-content: center;
+    }
+
+    .jobs{
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .job-item{
+        width: 130px;
+    }
+
+    .skills{
+        margin: 3rem;
+    }
+
+    .project-img{
+        width: 350px;
+    }
+
+    .cards{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+    }
+
+}
+
+/* Tabletas grandes y laptops pequeñas  */
+@media screen and (min-width: 992px) {
+
+    h1 {
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .menu-hamburger {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: flex;
+        position: static;
+        justify-content: flex-end;
+        font-size: 1.4rem;
+        flex-direction: row;
+        padding: 1rem;
+        margin: 1rem;
+        width: 100%;
+        transition: none;
+        margin-bottom: 2rem;
+    }
+
+    .circle-bg{
+        width: 500px;
+        height: 500px;
+    }
+
+    .info{
+        width: 400px;
+        font-size: 1.5rem;
+        top: -33rem;
+    }
+
+    .info-item{
+        font-size: 2rem;
+    }
+
+    .info-name{
+        font-size: 5rem;
+    }
+
+    .info-social{
+        top: -10rem;
+    }
+
+    .job-container{
+        width: 100vw;
+    }
+
+    .jobs{
+        width: 600px;
+        padding: 3rem;
+        margin: 0;
+        border-radius: .25em;
+    }
+
+    .job-item{
+        border-radius: .5rem;
+        margin: 1rem;
+        height: 90px;
+    }
+
+    .job-icon{
+        width: 60px;
+    }
+
+    .service-cards{
+        overflow-x: hidden;
+    }
+
+    .card-bard{
+        margin: 0 15%;
+    }
+
+    .project-img{
+        width: 550px;
+    }
+
+    ::-webkit-scrollbar{
+        visibility: visible;
+        height: 10px;
+        background-color: var(--dark-grayish-blue-trans);
+    }
+}

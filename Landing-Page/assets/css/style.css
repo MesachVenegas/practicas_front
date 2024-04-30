@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root{
+    --pink : hsl(322, 100%, 66%);
+    --pale-cyan : hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --gray-blue: hsl(208, 11%, 55%);
+    --open-sans : 'Open Sans', sans-serif;
+    --poppins: "Poppins", sans-serif;
+}
+
+/*
+    BEM
+    Bloque Elemento Modificador
+    Modificadores
+        nav--btn__pink
+        nav--btn__blue
+
+    Clases de utilidad
+        --> Bootstrap
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Ajusta las imágenes para que solo ocupen el total de la pantalla donde se muestran */
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: var(--open-sans);
+    font-weight:300;
+}
+
+.header{
+    background-image: url('../images/bg-hero-mobile.svg');
+    background-color: var(--pale-cyan);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.btn{
+    font-family: var(--open-sans);
+    border-radius: 1.5rem;
+    padding: 0.25rem 1rem;
+    font-size: .75rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.section--getstar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #FFF;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    z-index: 2;
+}
+
+.section--title{
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.section--btn{
+    background-color: var(--pink);
+    color: #FFF;
+    padding: 1rem;
+    border: none;
+    width: 60%;
+    max-width: 400px;
+    box-shadow: 4px 2px 4px 2px rgba(3, 3, 3, .3);
+}
+
+.section--btn:hover{
+    background-color: #FF9BDB;
+}
+
+.footer{
+    background-color: var(--dark-cyan);
+    position: relative;
+    color: #FFF;
+    height: auto;
+    padding: 1rem;
+    margin-top: -6rem;
+    z-index: 1;
+    font-weight: 400;
+}
+
+.container--foot{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.foot--item{
+    display: flex;
+    padding: .5rem;
+}
+
+.one{
+    margin-top: 6rem;
+}
+
+.foot--logo{
+    width: 150px;
+}
+
+.foot--icon__one{
+    max-width: 32px;
+    margin-right: .7rem;
+    margin-top: .3rem;
+}
+
+.navbar--logo{
+    width: 200px;
+}
+
+.fa-phone-volume{
+    transform: rotate(-50deg);
+}
+
+.three{
+    justify-content: center;
+    align-items: center;
+}
+
+.foot--icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFF;
+    padding: 1rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 3rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.foot--icon:hover{
+    border: 1px solid var(--pink);
+    color: var(--pink);
+}
+
+.foot--copy{
+    font-size: .8rem;
+}
+
+.navbar--btn{
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(3,3,3, .3);
+}
+
+.navbar--btn:hover{
+    color: rgba(3, 3, 3, .3);
+    box-shadow: 2px 2px 2px 2px rgba(3, 3, 3, .2);
+}
+
+
+.header--information{
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.header--img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.header--title{
+    margin-bottom: 1rem;
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+.header--text{
+    margin-bottom: 1rem;
+}
+
+.header--btn{
+    background-color: var(--pink);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    width: 75%;
+    margin-bottom: 1rem;
+    max-width: 300px;
+}
+.header--btn:hover{
+    background-color: #FF9BDB;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main--card{
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin: 2rem;
+    box-shadow: 2px 4px 2px 4px rgba(3, 3, 3, .2);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card--img{
+    max-width: 100%;
+    max-width: 300px;
+    padding: 1.5rem;
+}
+
+.card--content{
+    width: 100%;
+}
+.card--title{
+    padding: 1rem;
+    text-align: center;
+}
+
+.card--text{
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .header--information{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        gap: 1.5rem;
+    }
+
+    .header--title{
+        font-size: 2rem;
+    }
+
+    .header--img{
+        max-width: 400px;;
+    }
+
+    .section--getstar {
+        min-width: 400px;
+        padding: 3rem;
+        margin: 3rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .header{
+        background-image: url('../images/bg-hero-desktop.svg');
+    }
+    .header--text,
+    .header--title{
+        max-width: 400px;
+    }
+
+    .main{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main--card{
+        display: flex;
+    }
+
+    .card--content{
+        padding: 2rem;
+    }
+
+    .card--title{
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .card--text{
+        display: flex;
+        text-align: left;
+        max-width: 450px;
+    }
+
+    .card--text__right{
+        display: flex;
+        max-width: 450px;
+    }
+
+    .card--img{
+        max-width: 400px;
+    }
+
+    .main--card__left{
+        flex-direction: row;
+    }
+
+    .main--card__right{
+        flex-direction: row-reverse;
+    }
+
+    .section--getstar{
+        width: 750px;
+        padding: 3rem;
+        margin: 3rem;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .container--foot{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 900px;
+    }
+
+    .foot--logo{
+        width: 200px;
+    }
+
+    .two{
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+        margin-top: 9rem;
+    }
+
+    .foot--group{
+        width: auto;
+        margin-right: 2rem;
+    }
+
+    .three{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-top: 8rem;
+    }
+
+    .foot--copy{
+        margin-top: 5rem;
+        font-size: 1rem;
+        align-items: flex-end;
+    }
+
+}

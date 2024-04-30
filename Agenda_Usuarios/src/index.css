@@ -1,0 +1,17 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F1F1;
+    background-image: url(./assets/bg.png);
+    background-repeat: repeat;
+    background-size: contain;
+}

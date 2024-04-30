@@ -1,0 +1,14 @@
+.img-circle{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+article{
+    padding: 1rem;
+    border: 1px dashed grey;
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 1rem 0;
+}

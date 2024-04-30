@@ -1,0 +1,100 @@
+/*
+    Media Query
+        1) Palabra reservada
+        2) Media type, define cual es el dispositivo de salida para la visualización de la pagina.
+            - Pantalla (Screen)
+            - Impresora (Print)
+            - Speech (speech)
+            - Todos (all)
+        3) Operadores.
+            - not
+            - only
+            - or
+            - and
+        4) Breakpoints
+            - A partir de que tamaño de pantalla se genera el cambio.
+            - teléfonos( 600px o menos)
+            - Tablets y teléfonos grandes (600 px o mas)
+            - Landscape tabletas (768px o mas)
+            - Dispositivos grandes Laptops y Pc de escritorio (992px o mas)
+            - Dispositivos extra Grandes (1200px o mas)
+
+    Sintaxis:
+    @media media type operadores ( breakpoint )
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    Anchura minima
+        min-width
+    los estilos se aplican A Partir de la anchura señalada.
+*/
+@media screen and (min-width: 678px) {
+    /* reglas de CSS */
+    body{
+        background-color: cadetblue;
+    }
+}
+
+/*
+    Mobile First
+    Metodología en la que primero nos aseguramos de maquetar para mobile y despues hacemos cambios para pantallas de mayor resolución.
+*/
+
+
+/*
+    Anchura Maxima
+    max width
+
+    los cambios se aplican hasta cierto punto.
+*/
+
+/* @media  screen and ( max-width: 678px) {
+    p{
+        color: coral;
+        font-size: 1.5rem;
+    }
+} */
+
+.caja{
+    background-color: paleturquoise;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+@media screen and ( min-width: 320px) {
+    .caja{
+        max-width: 250px;
+        margin: 0 auto 1rem auto;
+    }
+}
+
+@media  screen and (min-width: 600px) {
+    .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .caja{
+        display: inline-block;
+        width: 45%;
+        max-width: 45%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .uno{
+        width: 100%;
+        max-width: 100%;
+        background-color: peru;
+    }
+    
+}

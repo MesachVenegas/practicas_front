@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2em;
+  width: 100vw;
+  height: 100vh;
+  color: #000;
+}
+
+.App > h1{
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
